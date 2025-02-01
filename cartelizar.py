@@ -6,6 +6,9 @@
 '''
 # Obtengo nombre de ciudad
 ciudad = input('Ingrese nombre de ciudad: ')
+# Mientras no haya al menos 4 caracteres solicito de nuevo el nombre
+while len(ciudad) < 4:
+    ciudad = input('\n\tIngrese nombre de 4 caracteres como minimo: ')
 # Comienzo a mostrar
 print('\n')
 # Recorro cada uno de los caracteres del nombre
